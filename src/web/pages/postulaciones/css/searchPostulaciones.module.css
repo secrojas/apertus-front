@@ -1,0 +1,119 @@
+.contenedor{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-up{
+  padding: 10px;
+  width: 100%;
+  flex-basis: 20%;
+  /* background-color: rgb(49, 123, 141); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-down{
+    width: 100%;
+    /* height: 100%; */
+    flex-basis: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.layout-down--left{
+   padding: 20px ;
+   width: 20%;
+   flex-basis: 20%;
+   /* background-color: rgb(185, 121, 121); */
+   display: flex;
+   flex-direction: column;
+
+}
+
+.layout-down--right{
+    width: 60%;
+    flex-basis: 60%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-down--right-1{
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    height: 10%;
+    flex-basis: 10%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+}
+
+.layout-down--right-1 b{
+    font-weight: bold;
+}
+
+.sortBy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.layout-down--right-2{
+    min-width: 50%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.layout-down--right-3{
+    width: 100%;
+    height: 10%;
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+@media (max-width: 1070px){ 
+   .layout-down{
+    flex-direction: column;
+    align-items: center;
+   }
+   .layout-down--left{
+    width: 80%;
+    flex-basis: 80%
+    }
+}
+
+@media (max-width: 600px){ 
+    .layout-down--left{
+        padding: 0px;
+        width: 95%;
+        flex-basis: 95%;
+        }
+    .layout-down--right{
+        padding: 0px;
+        width: 95%;
+        flex-basis: 95%
+    }
+    .layout-down--right-1{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}

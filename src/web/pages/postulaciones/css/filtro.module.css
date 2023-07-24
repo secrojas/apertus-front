@@ -1,0 +1,9 @@
+.contenedor{
+    display: flex;
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+
+.contenedor select{
+    cursor: pointer;
+}

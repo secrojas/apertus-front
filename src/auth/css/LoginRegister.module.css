@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    font-family: Montserrat;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor-left::before{
+    content: "" ;
+    display: block;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    background-color: #141414;
+    opacity: .4;
+    z-index: 2; 
+}
+.contenedor-left{
+    height: 100vh;
+    flex-basis: 60%;
+    overflow: hidden;
+
+}
+
+.contenedor-right::before{
+    content: "" ;
+    display: block;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    background-image: url(../../assets/imgs/banner/team-back.png);
+    background-position: right;
+    background-size: cover;
+    top:0;
+    right: 0;
+  
+}
+
+.contenedor-right{
+    height: 100vh;
+    flex-basis: 40%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  
+}
+
+.contenedor-right img{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.555);
+    padding:5px;
+    border-radius: 25%;
+    z-index: 5000;
+}
+
+.contenedor-right img:hover{
+  cursor: pointer;
+}
+
+
+.info{
+    color: white;
+    position: absolute;
+    z-index: 3;
+    left: 200px;
+    top: 200px;
+    font-weight: 500;
+}
+
+/* LOGIN  *****/
+
+.login-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;   
+    padding: 0px 40px 0px 40px;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.login-title{
+   font-size: 24px; 
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   z-index: 3;
+}
+
+.login-title h2{
+    font-weight: 700;
+    color: rgb(148, 131, 131);
+}
+
+.login-content{ 
+
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #ece7f7;
+    opacity: .8;
+    position: relative;
+    z-index: 3;
+    height: auto;
+}
+
+.login-form{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+ 
+}
+
+.form-input{
+    border: 1px solid rgba(26, 15, 9, 0.1);
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    position: relative;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.btn {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px;
+    padding: 14px 25px;
+    font-size: 18px;
+    line-height: 1;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100%;
+  }
+
+.btn-default {
+    color: #252323;
+    background-color: #ffa600;
+    border: none;
+    font-weight: 600;
+ }
+
+.btn-default:hover{
+    color: #ffffff;
+    background-color: black;
+}
+
+
+
+
+
+/* END LOGIN */
+
+
+/* Glide */
+
+.glide{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* RESET PASSWORD */
+
+.btn-reset{
+    width: 85%;
+}
+
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 1200px){ 
+  
+    
+   
+    .contenedor-left::before{
+        
+        display: none;
+
+    }
+    .contenedor-left{
+
+        display: none;
+    
+    }
+    
+    .contenedor-right::before{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .contenedor-right{
+     
+      width: 100%;
+    }
+
+
+  }
+
+  
+@media (max-width: 600px){ 
+
+    .login-content{ 
+        width: 310px;
+        height: auto;
+    }
+    .login-container{
+        width: 100%;
+        padding: 50px 0px 20px 0px;
+        height: auto;
+    }
+
+    .login-title h2{
+        display: none;
+    }
+
+    .size{
+        font-size: 14px;
+    }
+    .contenedor-right{
+     
+        height: 100vh;
+      }
+
+    
+}
+
+
+  @media (max-width: 350px){ 
+
+    .login-content{ 
+        width: 310px;
+        height: auto;
+    }
+    .login-container{
+        padding-bottom: 20px;
+        height: 500px;
+    }
+}

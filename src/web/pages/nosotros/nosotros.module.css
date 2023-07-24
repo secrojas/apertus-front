@@ -1,0 +1,63 @@
+.contenedor{
+    background-image: url('../../../assets/imgs/banner/team-back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+    /* background-color: aqua; */
+    font-size: 16px;
+    width: 100%;
+    /* height: 1200px; */
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.contenedor h1{
+    font-size: 1.5625em;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.contenedor p{
+    width: 70%;
+    
+    font-weight: 500; 
+}
+
+.contenedor b{
+    font-weight: bold;
+    word-spacing: 10px;
+    color: black;
+}
+
+
+
+@media (max-width: 600px){ 
+    .contenedor p {
+        width: 90%;
+    }
+   }
+
+   
+@media (max-width: 1140px){ 
+
+.contenedor{
+    background-image: none ;
+}    
+
+}
+
+   
+@media (max-width: 1440px){ 
+    
+    .contenedor{
+    background-size: cover;
+    background-position: right;    
+}
+
+
+}

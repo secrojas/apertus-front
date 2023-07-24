@@ -1,0 +1,179 @@
+.container{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.container--foto{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ /* height: 30%; */
+ padding: 10px;
+ 
+}
+
+
+.container--links{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ /* height: 5%; */
+ border-bottom: 1px solid rgb(228, 225, 225);
+ gap:20px
+}
+
+.container--data{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 70%;
+/* background-color: #ffa600; */
+
+}
+
+.foto{ 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px;
+    cursor: pointer;
+    background-color: rgb(238, 229, 229);
+    position: relative;
+    border-radius: 50%;
+}
+
+.foto input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.foto p:hover{
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 770px) {
+
+    .foto{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .postulaciones{
+   
+        width: 95%;
+       
+    }
+
+    .container--data{
+       
+        width: 100%;
+       
+        }
+  
+  }
+
+
+  /* CHANGE PASSWORD */
+
+  
+.login-content{ 
+
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* background-color: #ece7f7; */
+    opacity: .8;
+    position: relative;
+    z-index: 3;
+    /* height: 550px; */
+    height: auto;
+}
+
+.login-form{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:30px;
+    padding-top: 15px;
+    /* background-color: aqua; */
+ 
+}
+
+.form-input{
+    border: 1px solid rgba(26, 15, 9, 0.1);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+}
+
+.btn {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px;
+    padding: 14px 25px;
+    font-size: 18px;
+    line-height: 1;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100%;
+  }
+
+.btn-default {
+    color: #252323;
+    background-color: #ffa600;
+    border: none;
+    font-weight: 600;
+ }
+
+.btn-default:hover{
+    color: #ffffff;
+    background-color: black;
+}
+
+
+/* MIS POSTULACIONES */
+
+.container-postulaciones{
+width: 100%;
+min-height: 50vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.postulaciones{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    gap: 20px;
+    
+}

@@ -1,0 +1,9 @@
+export { ListadoGeneral } from './General';
+export { RedesSociales } from './RedesSociales';
+export { Contactos } from "./Contactos";
+export { Companies } from "./Companies";
+export { Categories } from "./Categories";
+export { Dashboard } from "./Dashboard";
+export { Technologies } from "./Technologies";
+export { Users } from "./Users";
+export { Jobs } from "./Jobs";
