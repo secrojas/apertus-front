@@ -23,7 +23,7 @@ export const AnalistaRRHH =()=>{
           <p>
             Inicio: Jueves 10 de agosto
             <br/>
-            Horario: 18.30 a 20.30 hs
+            Horario: 18.00 a 20.30 hs
           </p>
           <br/>
           <p>
