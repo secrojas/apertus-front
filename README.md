@@ -2,6 +2,10 @@
 
 Sistema de gestión de Recursos Humanos con portal web público y panel de administración.
 
+## Demo
+
+Ver el proyecto en producción: **[https://apertus.com.ar](https://apertus.com.ar)**
+
 ## Tecnologías
 
 - **Framework:** React 18 con TypeScript
